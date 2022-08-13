@@ -9,6 +9,8 @@ const router = express.Router();
 //Rotas
 const index = require('./routes/index');
 const relatorioRoute = require('./routes/relatorioRoute');
+const projectRoute = require('./routes/projectRoute');
 app.use('/', index);
 app.use('/relatorio', relatorioRoute);
+app.use('/project', projectRoute);
 module.exports = app;
