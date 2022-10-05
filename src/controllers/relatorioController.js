@@ -1,6 +1,6 @@
 exports.post = (req, res, next) => {
     let data = req.body;
-    let html_base = '<style>td{ text-align: center;}</style><div><div><b>Nome do arquivo:</b>{name} <br /><br /><b>Data:</b> {date} <b>Hora:</b> {hour} <br /><br />{metadata}</div></div>';
+    let html_base = '<style>@page { size: auto;  margin: 0mm; } td{ text-align: center;}</style><div><div><h2 style="margin-bottom: 5px">Estudo Preliminar</h2><b>Nome do arquivo:</b>{name} <br /><br /><b>Data:</b> {date} <b>Hora:</b> {hour} <br /><br />{metadata}</div></div>';
     let html = '';
 
     const keys = data.project.vid_list;
